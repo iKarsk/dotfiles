@@ -192,3 +192,14 @@ case ":$PATH:" in
 esac
 # pnpm end
 export PATH="$HOME/.local/bin:$PATH"
+
+# ----- Git shortcuts -----
+
+alias grh='git reset head --hard'
+alias gsm='git switch main'
+alias grm='git reset head --hard && git switch main'
+
+# Hard-reset then switch to the given branch
+gs() {
+	git reset head --hard && git switch "$1"
+}
