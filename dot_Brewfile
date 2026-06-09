@@ -1,0 +1,22 @@
+# ---- CLI tools ----
+brew "bat"                  # better cat
+brew "chezmoi"              # dotfile manager
+brew "eza"                  # better ls
+brew "fd"                   # better find
+brew "fzf"                  # fuzzy finder
+brew "ripgrep"              # fast grep
+brew "neovim"
+brew "tmux"
+brew "git"
+brew "gh"                   # github CLI
+brew "lazygit"
+brew "ffmpeg"
+brew "zsh-syntax-highlighting"
+
+# ---- Apps ----
+cask "appcleaner"
+cask "betterdisplay"
+cask "dockdoor"
+cask "linearmouse"
+cask "rectangle"            # window mgmt
+cask "hyperkey"             # keyboard modifier remap
