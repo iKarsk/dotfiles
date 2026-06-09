@@ -20,3 +20,6 @@ cask "dockdoor"
 cask "linearmouse"
 cask "rectangle"            # window mgmt
 cask "hyperkey"             # keyboard modifier remap
+cask "shottr"               # screenshot tool
+cask "iterm2"               # terminal emulator
+cask "cursor"               # AI code editor (VS Code fork)
