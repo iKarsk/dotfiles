@@ -23,3 +23,5 @@ cask "hyperkey"             # keyboard modifier remap
 cask "shottr"               # screenshot tool
 cask "iterm2"               # terminal emulator
 cask "cursor"               # AI code editor (VS Code fork)
+cask "alfred"               # application launcher
+cask "calibre"              # e-book management
