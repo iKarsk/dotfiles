@@ -203,3 +203,7 @@ alias grm='git reset head --hard && git switch main'
 gs() {
 	git reset head --hard && git switch "$1"
 }
+
+caskurl() {
+	brew info --json=v2 --cask "$1" | grep -i url
+}
