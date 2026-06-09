@@ -207,3 +207,6 @@ gs() {
 caskurl() {
 	brew info --json=v2 --cask "$1" | grep -i url
 }
+
+# ----- Machine-local overrides -----
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
