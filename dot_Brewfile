@@ -5,6 +5,7 @@ brew "eza"                  # better ls
 brew "fd"                   # better find
 brew "fzf"                  # fuzzy finder
 brew "tlrc"
+brew "git-delta"
 brew "thefuck"
 brew "ripgrep"              # fast grep
 brew "neovim"
