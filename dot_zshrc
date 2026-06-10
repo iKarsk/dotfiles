@@ -98,6 +98,9 @@ alias lse="eza --color=always --long --git --no-filesize --icons=always --no-tim
 eval $(thefuck --alias)
 eval $(thefuck --alias fk)
 
+# ---- Zoxide ----
+eval "$(zoxide init zsh)"
+alias cd="z"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
