@@ -4,6 +4,7 @@ brew "chezmoi"              # dotfile manager
 brew "eza"                  # better ls
 brew "fd"                   # better find
 brew "fzf"                  # fuzzy finder
+brew "tlrc"
 brew "ripgrep"              # fast grep
 brew "neovim"
 brew "tmux"
