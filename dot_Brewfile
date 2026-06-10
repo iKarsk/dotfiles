@@ -11,6 +11,7 @@ brew "git"
 brew "gh"                   # github CLI
 brew "lazygit"
 brew "ffmpeg"
+brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 
 # ---- Apps ----
