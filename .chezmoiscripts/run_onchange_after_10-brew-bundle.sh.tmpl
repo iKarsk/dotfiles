@@ -1,0 +1,6 @@
+#!/bin/bash
+# Brewfile hash: {{ include "dot_Brewfile.tmpl" | sha256sum }}
+set -eu
+
+echo "🍺  Installing packages from Brewfile..."
+brew bundle --file="$HOME/.Brewfile"

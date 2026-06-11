@@ -1,10 +1,13 @@
 {{- $email := promptStringOnce . "email" "Email address" -}}
 {{- $name := promptStringOnce . "name" "Full name" -}}
+{{- $profile := promptChoiceOnce . "profile" "What type of machine is this" (list "personal" "work") -}}
+{{- $setSshKey := promptBoolOnce . "setSshKey" "Set up a new SSH key on this machine" -}}
 
 [data]
     email = {{ $email | quote }}
     name = {{ $name | quote }}
-
+    profile = {{ $profile | quote }}
+    setSshKey = {{ $setSshKey }}
 
 [diff]
     pager = "delta"
