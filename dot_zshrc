@@ -29,6 +29,10 @@ export VISUAL=nvim
 # Force emacs keymap; an inherited $EDITOR=nvim otherwise starts zsh in vi mode
 bindkey -e
 
+# ----- SandVault -----
+# Install AI agents inside the sandbox via their own installers (latest)
+export SANDVAULT_ARGS="--native-install"
+
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
