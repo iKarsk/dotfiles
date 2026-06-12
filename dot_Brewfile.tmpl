@@ -15,6 +15,9 @@ brew "git"
 brew "gh"                   # github CLI
 brew "lazygit"
 brew "ffmpeg"
+brew "ack"                  # grep for programmers
+brew "mas"                  # mac app store cli
+brew "sandvault"            # run agents in a sandboxed macos user
 brew "powerlevel10k"        # prompt theme
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
@@ -30,6 +33,11 @@ cask "shottr"               # screenshot tool
 cask "iterm2"               # terminal emulator
 cask "cursor"               # AI code editor (VS Code fork)
 cask "alfred"               # application launcher
+cask "docker-desktop"       # containers
+cask "zed"                  # code editor
+cask "superset"             # terminal for orchestrating agents
+cask "font-hack-nerd-font"
+cask "font-jetbrains-mono-nerd-font"
 {{ if eq .profile "personal" -}}
 cask "calibre"              # e-book management
 {{ end -}}
