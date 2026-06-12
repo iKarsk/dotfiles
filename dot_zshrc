@@ -26,6 +26,9 @@ source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
 export EDITOR=nvim
 export VISUAL=nvim
 
+# Force emacs keymap; an inherited $EDITOR=nvim otherwise starts zsh in vi mode
+bindkey -e
+
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
