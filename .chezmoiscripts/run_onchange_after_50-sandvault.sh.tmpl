@@ -1,0 +1,16 @@
+#!/bin/bash
+# AGENTS hash: {{ include "dot_config/agents/AGENTS-GLOBAL.md" | sha256sum }}
+
+command -v sv &>/dev/null || exit 0
+
+echo "🔒  Seeding agent config into the SandVault sandbox..."
+
+shared="/Users/Shared/sv-${USER}"
+[ -d "$shared" ] || sv build
+
+guest="$shared/user"
+if [ -d "$shared" ]; then
+  mkdir -p "$guest/.claude" "$guest/.codex"
+  cp "$HOME/.config/agents/AGENTS-GLOBAL.md" "$guest/.claude/CLAUDE.md"
+  cp "$HOME/.config/agents/AGENTS-GLOBAL.md" "$guest/.codex/AGENTS.md"
+fi
